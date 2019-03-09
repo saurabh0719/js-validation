@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style>
+
+body
+{
+background-color:#3FBFBF;
+}
+.container{
+width:73%;
+background-color: white;
+}
+.form1{
+box-shadow: 10px 10px 20px 10px rgba(0, 0, 0, 0.2), 10px 10px 20px 10px rgba(0, 0, 0, 0.19);
+margin-top:50px;
+padding-top:50px;
+padding-bottom:50px;
+margin-bottom:50px;
+ }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container form1" style="border:1px solid rgba(0, 0, 0, 0.2)">
+
+<h3 class="text-center">Login page</h3>
+<br><br>
+<form class="form-horizontal" onsubmit="return loginauth()" action="process.php">
+
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="Name">Name: </label>
+      <div class="col-sm-9">
+        <input class="form-control" class="text" type="text" id ="name" placeholder="Name" required style="width:80%">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-3" for="">Age:</label>
+      <div class="col-sm-9">          
+        <input class="form-control" class="text" type="text" id="age" placeholder="Age" required style="width:80%">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="">Email id:</label>
+      <div class="col-sm-9">          
+        <input class="form-control" class="text" type="text" id="email" placeholder="Email" required style="width:80%">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="">Phone no. :</label>
+      <div class="col-sm-9">          
+        <input class="form-control" class="text" type="text" id="phone" placeholder="Phone number" required style="width:80%">
+      </div>
+    </div>
+	<div class="form-group">
+      <label class="control-label col-sm-3" for="">Password :</label>
+      <div class="col-sm-9">          
+        <input class="form-control" class="text" type="password" id="psw" placeholder="Password" required style="width:80%">
+		<div style="padding-top:10px">
+		<input type="checkbox" onclick="toggleFunction()"> Show Password
+		</div>
+      </div>
+    </div>
+	<br><br>
+    <div class="form-group">        
+      <div class="col-sm-offset-5 col-sm-7">
+        <button type="submit" type="button" class="btn btn-success" name="submit" value="Submit" required="">Submit</button>
+		<button type="reset" type="button" class="btn btn-danger" name="reset" value="Reset" required="" onclick="resetfunc()">Reset</button>
+      </div>
+    </div>
+	
+	</form>
+	</div>
+	
+	<script src="login.js"></script>
+	
+	
+	</body>
+	</html>
+	
+
+
